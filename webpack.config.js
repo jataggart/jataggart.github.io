@@ -7,7 +7,7 @@ module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "docs"),
         publicPath: '/'
     },
     // Enable sourcemaps for debugging webpack's output.
@@ -48,7 +48,7 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname, 'docs'),
         port: 7070
     }
 };
